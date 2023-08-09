@@ -15,6 +15,7 @@ public class App {
 		
 		Dao<Seller> sellerDao = DaoFactory.createSellerDao();
 		
+		System.out.println("==== Test 1: seller findById ====");
 		Seller seller = sellerDao.findById(3);
 		
 		System.out.println(seller);	
@@ -25,6 +26,8 @@ public class App {
 		int id = sc.nextInt();
 		sellerDao.deleteById(id);
 		System.out.println("Delete completed");
+		
+		sc.close();
 	}
 
 }
