@@ -40,6 +40,13 @@ public class App {
 		sellerDao.insert(newSeller);
 		System.out.println("Inserted. New id = " + newSeller.getId());
 
+		System.out.println("\n==== Test 5: seller update ====");
+		seller = sellerDao.findById(1);
+		seller.setName("Martha Waine");
+		sellerDao.update(seller);
+		System.out.println("Update complete!");
+		
+		
 		System.out.println("\n==== TEST 6: seller delete ====");
 		System.out.println("Enter id for delete: ");
 		int id = sc.nextInt();
