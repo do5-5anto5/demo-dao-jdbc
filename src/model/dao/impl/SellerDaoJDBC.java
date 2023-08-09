@@ -155,8 +155,7 @@ public class SellerDaoJDBC implements Dao<Seller> {
 	}
 
 
-	@Override
-	public List<Seller> findByDepartment(Department department) {
+		public List<Seller> findByDepartment(Department department) {
 		PreparedStatement st = null;
 		ResultSet rs = null;
 		
